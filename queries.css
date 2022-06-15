@@ -1,0 +1,267 @@
+/*    1072px*/
+
+@media (max-width: 67em) {
+  html {
+    font-size: 59%;
+  }
+  .section-about {
+    gap: 3.2rem;
+  }
+  .img-box {
+    margin-left: 2.4rem;
+  }
+  .profile-description {
+    margin-right: 2.4rem;
+  }
+  .lists {
+    margin-left: 3.2rem;
+  }
+  .grid-2-cols {
+    grid-template-columns: 35fr 65fr;
+  }
+  .right-lists {
+    margin-right: 2.4rem;
+  }
+}
+
+/*************
+* 888px
+***************/
+
+@media (max-width: 55.5em) {
+  html {
+    font-size: 55%;
+  }
+  .header-secondary {
+    margin: 4rem 0 3rem 4.8rem;
+  }
+  /*********************
+  *Mobile navigation
+  *********************/
+
+  .btn-mobile-nav {
+    display: block;
+    z-index: 9999;
+  }
+  .main-nav {
+    background-color: rgba(255, 255, 255, 0.9);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+
+    /*Hide navigation*/
+    /*allows no transition at all*/
+    /*displey=none*/
+    /*1)hide it visualy*/
+    opacity: 0;
+    /* 02)make it unaccessible to mouse and keyboard*/
+    pointer-events: none;
+    /* 03)hide id from screen readers */
+    visibility: hidden;
+  }
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+  .main-nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 3.2rem;
+  }
+  .right-lists {
+    grid-template-columns: 25fr 75fr;
+  }
+  .user-name {
+    font-size: 6.2rem;
+  }
+  .profile-description {
+    font-size: 3rem;
+  }
+}
+
+/*****************
+704px
+*****************/
+
+@media (max-width: 44em) {
+  .img-box {
+    margin: 0 3.6rem 3.6rem 3.6rem;
+    width: 80%;
+  }
+  .section-about.grid-2-cols {
+    grid-template-columns: 50fr 50fr;
+  }
+  .user-name {
+    font-size: 3.6rem;
+  }
+  .profile-description {
+    font-size: 2rem;
+  }
+  .grid {
+    grid-template-columns: 60fr 40fr;
+  }
+
+  .contact-box {
+    grid-row: 2;
+    grid-column: 1;
+  }
+
+  .personal-info-box {
+    grid-row: 1;
+    grid-column: 1 /-1;
+  }
+  .skills-box {
+    grid-row: 2;
+    grid-column: 2;
+    justify-self: center;
+  }
+
+  .education-box {
+    grid-row: 3;
+    grid-column: 1/-1;
+  }
+  .experience-box {
+    grid-row: 4;
+    grid-column: 1/-1;
+  }
+
+  .softwares-box {
+    grid-row: 6;
+    grid-column: 1/1.5;
+  }
+  .certifications-box {
+    grid-row: 5;
+    grid-column: 1/-1;
+  }
+  .language-hobies-box {
+    display: flex;
+    grid-row: 6;
+    grid-column: 1;
+  }
+  .right-box {
+    border-left: none;
+  }
+  .year {
+    margin-left: 4.8rem;
+  }
+  .lists {
+    margin-left: 4.8rem;
+  }
+}
+
+/*****************
+608px
+*****************/
+
+@media (max-width: 38em) {
+  html {
+    font-size: 45%;
+  }
+  .section-about.grid-2-cols {
+    grid-template-columns: 40fr 60fr;
+    gap: 0.8rem;
+  }
+
+  .img-box {
+    width: 70%;
+    margin-left: 4.8rem;
+  }
+  .personal-info {
+    letter-spacing: 0.8;
+    line-height: 1.2;
+  }
+  .grid {
+    grid-template-columns: 60fr 40fr;
+  }
+  .language-hobies-box {
+    display: block;
+  }
+
+  .year {
+    display: flex;
+    margin-left: 2.4rem;
+  }
+  .right-lists {
+    row-gap: 1rem;
+  }
+  .education-name {
+    margin-right: 1.2rem;
+  }
+}
+/********************
+448px
+/*********************/
+
+@media (max-width: 28em) {
+  html {
+    font-size: 40%;
+  }
+  .grid {
+    grid-template-columns: 60fr 40fr;
+  }
+  .address {
+    font-size: 1.6rem;
+  }
+  .contact-link,
+  .contact-link:link,
+  .contact-link:visited {
+    font-size: 1.4rem;
+  }
+  .personal-info {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+  .header-secondary {
+    margin: 2rem 0 2rem 1rem;
+  }
+  .lists {
+    margin: 1.6rem 1rem 0 1.6rem;
+  }
+  .right-lists {
+    gap: 1.2rem;
+  }
+  .education-name {
+    margin-right: 1.2rem;
+  }
+  .header-secondary #softwares {
+    margin-right: 2rem !important;
+  }
+  .list {
+    margin-left: 1.4rem;
+  }
+}
+
+/*
+
+---01 TYPOGRAPHY SYSTEM
+
+-FONT SIZE SYSTEM (px)
+      10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 
+      36 / 44 / 52 / 62 / 74 / 86 / 98
+
+
+-Spacing sistem (px)
+      2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 
+      / 80 / 96 / 128
+*/
